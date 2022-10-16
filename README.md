@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-My html file: https://muhanhe.github.io/Lab2_Starter/
+# fa22-cse110-lab3
+https://muhanhe.github.io/fa22-cse110-lab3/
