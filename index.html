@@ -6,24 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Class Scheduling Project First Brainstorm</title>
+    <style>
+        body {
+          background-color: rgb(250,240,230);
+          color: #7A4F40
+        }
+        /*Units relative*/
+        h1 {font-size: 5vh;
+            text-align: center;
+            height: 10vm;
+            width: 50vm;
+            max-width: 80vmax;
+            min-width: 70vmin;
+            position: relative;
+        }
+        /*Units absolute*/
+        h4{font-size: 15pt;
+            text-decoration: overline underline;
+        }
+        /*Units absolute*/
+        h5{font-size: 0.12in;
+            display: inline-block;
+            position: sticky
+            
+        }
+        h5:active {
+            background-color: yellow;
+        }
+        section{
+            border-style: dashed;
+            /*Units absolute*/
+            border-width: 3px;
+            border-color: bisque;
+            padding-bottom: 1em;
+            margin-bottom: 20px;
+        }
+        nav:hover {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background-color: rgb(206, 214, 224);
+        }
+        div {
+            background-color: lightgrey;
+            /*Units relative*/
+            border-width: 10vw;
+            border-color: rgb(198, 198, 187);
+            border-style: solid;
+            /*Units relative*/
+            border-radius: 10%;
+            padding:100px;
+            margin-top: 20px;
+        }
+        li{
+            display: block;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(164, 134, 99);
+        }
+        .flex-container > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 250px;
+            grid-template-rows: auto;
+            grid-auto-rows: 150px;
+            grid-template-rows: 200px;
+        }
+        @media screen and (min-width: 480px) {
+        body {
+            background-color:rgb(142, 125, 138);
+        }
+        }
+  
+    </style>
 </head>
 <body>
     <header>
-        <nav><a href="https://github.com/MuhanHe/Lab2_Starter">Muhan's github</a></nav>
+        <nav><a href="https://github.com/MuhanHe">Muhan's github</a></nav>
     </header>
     <h1 style="background-color:rgb(216, 187, 167);">Class Scheduling Project Meeting </h1>
-    <h5>Topic: Brainstorming |
+    <h5 style = "background-color:bisque;">Topic: Brainstorming |
         Date: 10/08/2022 |
         Attendance: Muhan, Michelle, Jason
     </h5>
     <hr>
-    <section style="background-color:rgb(243, 216, 209);">
+    <section style="background-color: #F3D8D1;",class="one">
         <h4>Topic1: Create Milestones</h4>
         <ul>
                 <li>users' need</li>
                 <li>project milestones</li>
             </ul>
-        <hr>
     </section>
 
     <section style="background-color:rgb(206, 214, 224);">
@@ -33,19 +112,17 @@
             <li>responsibilities</li>
             <li>concerns & questions</li>
         </ul>
-        <hr>
     </section>
 
-    <section style="background-color:rgb(199, 187, 188);">
+    <section style="background-color: hsl(355,10%,76%);">
         <h4>Topic3: Tools & Software</h4>
         <ul>
             <li>tools & software & frameworks for development</li>
             <li>project tracking tools</li>
         </ul>
-        <hr>
     </section>
 
-    <section style="background-color:rgb(240, 228, 215);">
+    <section style="background-color:#cec3ba;">
         <h4>Topic4: Timeline & Deadlines & Meetings</h4>
         <ul>
             <li>timeline</li>
@@ -66,22 +143,33 @@
                 </fieldset>
                 </form> 
         </details>
-        <hr>
     </section>
 
-    <section style="background-color:rgb(198, 198, 187);">
-        <h5>Meeting Notes/Diagrams</h5>
+    <div>
+        <h4>Meeting Notes/Diagrams</h4>
         <img src="image.jpeg" alt="Meeting Notes/Diagrams" width="500" height="345">
-        <h5>Meeting audio</h5>
+        <h4>Meeting audio</h4>
         <audio controls autoplay>
             <source src="mixkit-sweet-kitty-meow-93.wav" type="audio/wav">
         Your browser does not support the audio element.
         </audio>
-        <h5>Meeting movie</h5>
+        <h4>Meeting movie</h4>
         <video width="320" height="240" controls>
             <source src="IMG_0884.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video>
+    </div>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <section class="grid-container">
+        <div class = "grid-item grid-item-1">first grid</div>
+        <div class = "grid-item grid-item-2">second grid</div>
+        <div class = "grid-item grid-item-3">third grid</div>
+        <div class = "grid-item grid-item-4">fourth grid</div>
     </section>
     <footer>
         <p>Author: Muhan He
